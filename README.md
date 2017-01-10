@@ -18,7 +18,7 @@ Copy all the content except *example* directory to a top directory.\* Create a t
 
 ### Format of Tags File
 
-A tags file can have these sections: title, images, descriptions, and tags. All sections are ended by a line starts with *<* or end of file.
+A tags file can have these sections: *title*, *images*, *descriptions* and *tags*. All sections are ended by a line starts with lesser than sign (<) or end of file.
 
 Title section starts with a line that **is** *\<title\>*. Only the last line in this section will be used as title.
 
@@ -26,4 +26,25 @@ Images section starts with a line that **is** *\<image\>* or *\<images\>*. It sh
 
 Descriptions section starts with a line that **is** *\<description\>* or *\<descriptions\>*.
 
-Tags section starts with a line that **starts with** *\<tag\>* or *\<tags\>*. Right part of this line is the namespace of tags in this section. Following lines are tags separated by delimiter vertical bar '|' or newline.
+Tags section starts with a line that **starts with** *\<tag\>* or *\<tags\>*. Right part of this line is the namespace of tags in this section. Following lines are tags separated by delimiter vertical bar (|) or newline.
+
+So a tags file may look like this:
+
+```
+\<title\>
+title
+\<images\>
+img1path
+img2path
+\<descriptions\>
+description_line1
+description_line2
+\<tags\>namespace1
+tag11|tag12|tag13
+tag14
+\<tags\>namespace2
+tag21
+```
+
+Note: Double quote sign (") should never be used in a tags file. Vertical bar (|), lesser than sign (<) or greater than sign (>) should not be used in any namespace or any tag. Whitespaces at the beginning or the end of each line, each namespace, or each tag would be stripped.
+
