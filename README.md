@@ -66,7 +66,7 @@ So a search query may look like this:
 <n1|t1> | <n2|t2> - ( <n3|t3> <n4|t4> )
 ```
 
-Click *Search* button to start search using query in the input box. In search results page, click a title would go to a preview page.
+Click *Search* button to start search using query in the input box. In search results page, click a title would go to a preview page that shows more information.
 
 If you are using Windows and want the directory to be opened automatically by the server-side script, uncomment this line in *preview.py*:
 
