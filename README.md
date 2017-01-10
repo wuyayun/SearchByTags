@@ -31,20 +31,29 @@ Tags section starts with a line that **starts with** *\<tag\>* or *\<tags\>*. Ri
 So a tags file may look like this:
 
 ```
-\<title\>
+<title>
 title
-\<images\>
+<images>
 img1path
 img2path
-\<descriptions\>
+<descriptions>
 description_line1
 description_line2
-\<tags\>namespace1
+<tags>namespace1
 tag11|tag12|tag13
 tag14
-\<tags\>namespace2
+<tags>namespace2
 tag21
 ```
 
 Note: Double quote sign (") should never be used in a tags file. Vertical bar (|), lesser than sign (<) or greater than sign (>) should not be used in any namespace or any tag. Whitespaces at the beginning or the end of each line, each namespace, or each tag would be stripped.
 
+### Build Index
+
+Run *build_index.py* before searching if tags files were modified.
+
+### Search
+
+Run *webserver.py*, then go to *localhost/cgi/search.py* in a web browser.
+
+Hover over *Add a Tag*
