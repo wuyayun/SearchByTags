@@ -18,7 +18,7 @@ Copy all the content except *example* directory to a top directory.\* Create a t
 
 ### Format of Tags File
 
-A tags file can have these sections: *title*, *images*, *descriptions* and *tags*. All sections are ended by a line starts with lesser than sign (<) or end of file.
+A tags file can have these sections: *title*, *images*, *descriptions* and *tags*. All sections are ended by a line starts with \< or end of file.
 
 Title section starts with a line that **is** *\<title\>*. Only the last line in this section will be used as title.
 
@@ -56,4 +56,18 @@ Run *build_index.py* before searching if tags files were modified.
 
 Run *webserver.py*, then go to *localhost/cgi/search.py* in a web browser.
 
-Hover over *Add a Tag*
+Hover over *Add a Tag* to see a two-level dropdown menu, from which you can select tags. Click a tag to add it to the input box in format *\<namespace|tag\>*.
+
+This program supports Boolean search. *&*, *and* or joining without operator specifies logical AND. *|* or *or* specifies logical OR. *-* or *not* specifies logical NOT. Round brackets (()) can be used to set order of operations.
+
+So a search query may look like this:
+
+```
+<n1|t1>|<n2|t2>-(<n3|t3><n4|t4>)
+```
+
+Click *Search* button to start search using query in the input box. In search results page, click a title would go to a preview page.
+
+If you are using Windows and want the directory to be opened automatically by the server-side script, uncomment this line in *preview.py*:
+
+\#subprocess.Popen(r'explorer "{}"'.format(os.path.abspath(info['path'])))
