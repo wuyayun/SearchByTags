@@ -63,7 +63,7 @@ This program supports Boolean search. *&*, *and* or joining without operator spe
 So a search query may look like this:
 
 ```
-<n1|t1>|<n2|t2>-(<n3|t3><n4|t4>)
+<n1|t1> | <n2|t2> - ( <n3|t3> <n4|t4> )
 ```
 
 Click *Search* button to start search using query in the input box. In search results page, click a title would go to a preview page.
