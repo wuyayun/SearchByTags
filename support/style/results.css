@@ -1,0 +1,22 @@
+.query {
+    color: #00007f;
+    background: #00ffff;
+}
+.error {
+    color: #7f0000;
+    background: #ffbfbf;
+}
+.results table {
+    border: 1px solid black;
+    width: 100%;
+}
+.results th {
+    border: 1px solid black;
+    width: 200px;
+}
+.results td {
+    border: 1px solid black;
+}
+.results img {
+    width: 200px;
+}

@@ -1,0 +1,1 @@
+function tag_onclick(val) { document.getElementById('query').value += val; }

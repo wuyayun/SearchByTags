@@ -1,0 +1,11 @@
+.preview table {
+    border: 1px solid black;
+    width: 100%;
+}
+.preview th {
+    text-align: center;
+    border: 1px solid black;
+}
+.preview td {
+    border: 1px solid black;
+}

@@ -1,0 +1,4 @@
+<tag>Role
+Tool
+<tag>for test
+test`~!@#$%^&*()_-+=?/\':;,.{}[]char

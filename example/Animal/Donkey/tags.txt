@@ -1,0 +1,10 @@
+<title>
+Donkey
+<tags>Role
+Ride
+<tags>Eat
+Grass
+<tag>Animal
+Mammal
+<description>
+A Donkey.

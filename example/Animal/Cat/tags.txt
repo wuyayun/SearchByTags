@@ -1,0 +1,10 @@
+<title>
+Cat
+<tags>Role
+Pet
+<tags>Eat
+Meat | Fish
+<tag>Animal
+Mammal
+<description>
+A Cat.

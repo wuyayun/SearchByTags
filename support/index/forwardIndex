@@ -1,0 +1,1 @@
+[{"Role": ["Pet"], "Eat": ["Meat", "Fish"], "Animal": ["Mammal"]}, {"Role": ["Pet"], "Eat": ["Meat"], "Animal": ["Mammal"]}, {"Role": ["Ride"], "Eat": ["Grass"], "Animal": ["Mammal"]}, {"Role": ["Tool"], "for test": ["test`~!@#$%^&*()_-+=?/\\':;,.{}[]char"]}]

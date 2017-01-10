@@ -1,0 +1,10 @@
+<title>
+Dog
+<tags>Role
+Pet
+<tags>Eat
+Meat
+<tag>Animal
+Mammal
+<description>
+A Dog.
